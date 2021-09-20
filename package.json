@@ -12,6 +12,10 @@
     "format": "prettier --write .",
     "lint": "eslint . --ext ts --ext tsx --ext js"
   },
+  "engines": {
+    "node": ">= 16.0.0",
+    "npm": ">= 7.0.0"
+  },
   "browserslist": [
     "defaults",
     "not IE 11",
