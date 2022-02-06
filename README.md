@@ -22,6 +22,12 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 # Build the production version
 $ npm run build
 
+# Run the cypress in browser mode
+$ npm run cypress
+
+# Run the cypress in headless mode
+$ npm run cypress:headless
+
 # Run the development server
 $ npm run dev
 
@@ -30,6 +36,12 @@ $ npm run format
 
 # Run the production version of the build
 $ npm run start
+
+# Run the E2E tests in browser mode
+$ npm run test:e2e
+
+# Run the E2E tests in headless mode
+$ npm run test:e2e:headless
 
 # Run the code linter
 $ npm run test:lint
@@ -50,11 +62,13 @@ $ npm run test:type-check
 .
 ├── __mocks__               # Jest mocks
 ├── .vscode                 # Visual Studio Code configuration folder
+├── cypress                 # Cypress folder
 ├── public                  # Public folder
 ├── src
 │   ├── components          # React components
 │   ├── pages               # Next.js pages
 │   └── utils               # Utility folder
+├── cypress.json            # Cypress configuration file
 ├── next-env.d.ts           # Auto-generated Next.js types
 ├── next.config.js           # Next.js configuration file
 ├── README.md               # README file
