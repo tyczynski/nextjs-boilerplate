@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "mikestead.dotenv",
+    "editorconfig.editorconfig",
+    "dbaeumer.vscode-eslint",
+    "jpoissonnier.vscode-styled-components",
+    "esbenp.prettier-vscode"
+  ]
+}
