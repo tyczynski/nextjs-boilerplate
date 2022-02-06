@@ -20,6 +20,7 @@ const customJestConfig: Config.InitialOptions = {
   moduleNameMapper: {
     // Handle module aliases
     '^~/components/(.*)$': '<rootDir>/src/components/$1',
+    '^~/pubic/(.*)$': '<rootDir>/public/$1',
     '^~/utils/(.*)$': '<rootDir>/src/utils/$1',
   },
 };

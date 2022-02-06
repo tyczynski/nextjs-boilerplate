@@ -20,14 +20,17 @@
     "skipLibCheck": true,
     "strict": true,
     "target": "esnext",
-    "baseUrl": "src",
+    "baseUrl": ".",
     "paths": {
       "~/components/*": [
-        "components/*"
+        "./src/components/*"
+      ],
+      "~/public/*": [
+        "./public/*"
       ],
       "~/utils/*": [
-        "utils/*"
-      ]
+        "./src/utils/*"
+      ],
     },
     "incremental": true
   },
