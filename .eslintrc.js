@@ -1,48 +1,18 @@
+/**
+ * ESLint configuration file based on Next.js defaults
+ * @see {@link https://nextjs.org/docs/basic-features/eslint#eslint-config}
+ */
 module.exports = {
   parser: '@typescript-eslint/parser',
+  extends: ['next/core-web-vitals', 'prettier'],
   plugins: ['@typescript-eslint'],
-  extends: [
-    'eslint:recommended',
-    'plugin:react/recommended',
-    'plugin:@typescript-eslint/recommended',
-    'prettier',
-    'prettier/@typescript-eslint',
-  ],
-  env: {
-    es6: true,
-    browser: true,
-    jest: true,
-    node: true,
-  },
   rules: {
-    'react/react-in-jsx-scope': 0,
-    'react/display-name': 0,
-    'react/prop-types': 0,
-    'react/no-unescaped-entities': 0,
-    '@typescript-eslint/explicit-function-return-type': 0,
-    '@typescript-eslint/explicit-module-boundary-types': 0,
-    '@typescript-eslint/explicit-member-accessibility': 0,
-    '@typescript-eslint/indent': 0,
-    '@typescript-eslint/member-delimiter-style': 0,
-    '@typescript-eslint/no-explicit-any': 0,
-    '@typescript-eslint/no-var-requires': 0,
-    '@typescript-eslint/no-use-before-define': 0,
-    '@typescript-eslint/no-unused-vars': [
-      2,
-      {
-        argsIgnorePattern: '^_',
-      },
-    ],
+    'prefer-const': ['error'],
     'no-console': [
-      2,
+      'error',
       {
         allow: ['warn', 'error'],
       },
     ],
-  },
-  settings: {
-    react: {
-      version: 'detect',
-    },
   },
 };
