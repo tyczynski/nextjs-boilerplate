@@ -1,17 +1,10 @@
 # Next.js starter
 
-Next.js starter with predefined configurations for quickstart of a new project. Included in the starter are:
-
-* [`styled-components`](https://styled-components.com/) with configured `babel-plugin-styled-components`
-* [`typescript`](https://www.typescriptlang.org/),
-* code style and linting guarded by `editorconfig`, `eslint` and `prettier`
-* `husky` and `lint-staged` to run git hooks
-* `browserlist` using defaults and excludes IE 11
-* support to persistent layouts; see more [there](https://dev.to/ozanbolel/layout-persistence-in-next-js-107g)
+Next.js boilerplate with great defaults to fast bootstrap your new project.
 
 ## Requirements
 
-* [Node.js](https://nodejs.org/en/) LTS release or greater
+* [Node.js](https://nodejs.org/en/) 16.x release
 
 ## Getting Started
 
@@ -26,43 +19,56 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ## Scripts
 
 ```bash
+# Build the production version
+$ npm run build
+
 # Run the development server
 $ npm run dev
 
-# Run the development server in "debugger" mode
-$ npm run dev:debug
-
-# Build the production version
-$ npm run build
+# Run the code style checker and fix auto-fixable errors
+$ npm run format
 
 # Run the production version of the build
 $ npm run start
 
-# Run the code style fixing with prettier
-$ npm run format
+# Run the code linter
+$ npm run test:lint
 
-# Run the code linting with eslint
-$ npm run lint
+# Run the unit/integration tests
+$ npm run test:unit
+
+# Run the watch mode of `npm run test:unit`
+$ npm run test:unit:watch
 
 # Run the typescript's type checking
-$ npm run type-check
+$ npm run test:type-check
 ```
 
 ## Files structure
 
-### components
+```
+.
+├── __mocks__               # Jest mocks
+├── .vscode                 # Visual Studio Code configuration folder
+├── public                  # Public folder
+├── src
+│   ├── components          # React components
+│   ├── pages               # Next.js pages
+│   └── utils               # Utility folder
+├── next-env.d.ts           # Auto-generated Next.js types
+├── next.config.js           # Next.js configuration file
+├── README.md               # README file
+└── tsconfig.json            # TypeScript configuration
+```
 
-The most common folder where are all components and sections used on page are placed.
-
-### pages
-
-For more informations, see the Next.js documentaction.
-
-[https://nextjs.org/docs/basic-features/pages](https://nextjs.org/docs/basic-features/pages)
-
-### public
+### /public
 
 For more informations, see the Next.js documentaction.
 
 [https://nextjs.org/docs/basic-features/static-file-serving](https://nextjs.org/docs/basic-features/static-file-serving)
 
+### src/pages
+
+For more informations, see the Next.js documentaction.
+
+[https://nextjs.org/docs/basic-features/pages](https://nextjs.org/docs/basic-features/pages)
