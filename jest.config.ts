@@ -1,11 +1,11 @@
-import type { Config } from '@jest/types';
-
 /**
  * Jest configuration file
  *
  * @see {@link https://jestjs.io/docs/configuration}
  * @see {@link https://nextjs.org/docs/testing#jest-and-react-testing-library}
  */
+import type { Config } from '@jest/types';
+
 const nextJest = require('next/jest');
 
 const createJestConfig = nextJest({
