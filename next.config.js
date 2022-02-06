@@ -3,8 +3,7 @@ const compose = require('next-compose-plugins');
 const plugins = [];
 
 const nextConfiguration = {
-  // https://nextjs.org/docs/advanced-features/compiler#minification
-  swcMinify: true,
+  /* Next.js configuration */
 };
 
-module.exports = compose(plugins, nextConfiguration)
+module.exports = compose(plugins, nextConfiguration);
