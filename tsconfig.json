@@ -20,6 +20,10 @@
     "skipLibCheck": true,
     "strict": true,
     "target": "esnext",
+    "types": [
+      "jest",
+      "@testing-library/jest-dom"
+    ],
     "baseUrl": ".",
     "paths": {
       "~/components/*": [
