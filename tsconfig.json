@@ -24,25 +24,26 @@
       "jest",
       "@testing-library/jest-dom"
     ],
-    "baseUrl": ".",
+    "baseUrl": "src",
     "paths": {
       "~/components/*": [
-        "./src/components/*"
+        "./components/*"
       ],
       "~/public/*": [
-        "./public/*"
+        "../public/*"
       ],
       "~/utils/*": [
-        "./src/utils/*"
+        "./utils/*"
       ],
     },
     "incremental": true
   },
   "exclude": [
-    "node_modules"
+    "node_modules",
+    ".storybook"
   ],
   "include": [
-    "**/*.ts",
-    "**/*.tsx"
+    "src",
+    "next-env.d.ts"
   ]
 }
