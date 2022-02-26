@@ -7,7 +7,13 @@ const plugins = [];
  * @type {import('next').NextConfig}
  */
 const nextConfiguration = {
-  /* config options here */
+  compiler: {
+    removeConsole: {
+      exclude: ['error', 'warn'],
+    },
+    reactRemoveProperties: true,
+  },
+  swcMinify: true,
 };
 
 module.exports = compose(plugins, nextConfiguration);
