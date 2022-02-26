@@ -1,0 +1,46 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "npm",
+      "script": "build",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": [],
+      "label": "Build project",
+      "detail": "next build"
+    },
+    {
+      "type": "npm",
+      "script": "dev",
+      "problemMatcher": [],
+      "label": "Run development server",
+      "detail": "next dev"
+    },
+    {
+      "type": "npm",
+      "script": "test:lint",
+      "label": "Lint code",
+      "detail": "next lint",
+    },
+    {
+      "type": "npm",
+      "script": "test",
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      },
+      "label": "Run tests",
+      "detail": "npm run test:type-check && npm run test:lint && npm run test:unit && npm run test:e2e:headless",
+    },
+    {
+      "type": "shell",
+      "command": "jest ${file}",
+      "group": "test",
+      "label": "Run unit tests for current file",
+      "detail": "jest ${file}",
+    }
+  ]
+}
