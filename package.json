@@ -18,8 +18,8 @@
     "testtype-check": "tsc --pretty --noEmit"
   },
   "engines": {
-    "node": ">= 16.0.0",
-    "npm": ">= 7.0.0"
+    "node": ">= 18.12.1",
+    "npm": ">= 8.19.2"
   },
   "browserslist": [
     "defaults",
@@ -29,11 +29,11 @@
     "not dead"
   ],
   "dependencies": {
-    "next": "^12.1.0",
+    "next": "^13.0.3",
     "next-compose-plugins": "^2.2.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "styled-components": "^5.3.3"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "styled-components": "^5.3.6"
   },
   "devDependencies": {
     "@testing-library/cypress": "^8.0.2",
