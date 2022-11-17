@@ -1,4 +1,4 @@
-name: End-to-end tests
+name: End-to-End tests
 
 on:
   push:
@@ -11,7 +11,7 @@ jobs:
     name: E2E on Chrome
     steps:
       - uses: actions/checkout@v2
-      - uses: cypress-io/github-action@v2
+      - uses: cypress-io/github-action@v4
         with:
           browser: chrome
           build: npm run build
@@ -23,7 +23,7 @@ jobs:
     name: E2E on Firefox
     steps:
       - uses: actions/checkout@v2
-      - uses: cypress-io/github-action@v2
+      - uses: cypress-io/github-action@v4
         with:
           browser: firefox
           build: npm run build
@@ -35,7 +35,7 @@ jobs:
     name: E2E on Microsoft Edge
     steps:
       - uses: actions/checkout@v2
-      - uses: cypress-io/github-action@v2
+      - uses: cypress-io/github-action@v4
         with:
           browser: edge
           build: npm run build
