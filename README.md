@@ -4,7 +4,7 @@ Next.js boilerplate with great defaults to fast bootstrap your new project.
 
 ## Requirements
 
-* [Node.js](https://nodejs.org/en/) 16.x release
+* [Node.js](https://nodejs.org/en/) 18.x release
 
 ## Getting Started
 
@@ -68,7 +68,7 @@ $ npm run test:type-check
 │   ├── components          # React components
 │   ├── pages               # Next.js pages
 │   └── utils               # Utility folder
-├── cypress.json            # Cypress configuration file
+├── cypress.config.tw        # Cypress configuration file
 ├── next-env.d.ts           # Auto-generated Next.js types
 ├── next.config.js           # Next.js configuration file
 ├── README.md               # README file
