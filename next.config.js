@@ -1,6 +1,3 @@
-// @ts-check
-const compose = require('next-compose-plugins');
-
 const plugins = [];
 
 /**
@@ -13,7 +10,8 @@ const nextConfiguration = {
     },
     reactRemoveProperties: true,
   },
+  reactStrictMode: true,
   swcMinify: true,
 };
 
-module.exports = compose(plugins, nextConfiguration);
+module.exports = nextConfiguration;
