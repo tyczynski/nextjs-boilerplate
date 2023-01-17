@@ -37,6 +37,9 @@ $ npm run format
 # Run the production version of the build
 $ npm run start
 
+# Run the unit tests, linter and type checking
+$ npm run test
+
 # Run the E2E tests in browser mode
 $ npm run test:e2e
 
@@ -69,6 +72,7 @@ $ npm run test:type-check
 │   ├── pages               # Next.js pages
 │   └── utils               # Utility folder
 ├── cypress.config.ts       # Cypress configuration file
+├── .lintstagedrc.js       # lint-staged configuration file
 ├── next-env.d.ts           # Auto-generated Next.js types
 ├── next.config.js          # Next.js configuration file
 ├── README.md               # README file
